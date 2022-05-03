@@ -15,8 +15,11 @@ document.querySelector(".check").addEventListener("click", function () {
     displayMessage("Correct ! You win !");
     document.querySelector("body").style.backgroundColor = "#60b347";
     document.querySelector("body").style.width = "#30rem";
-
     document.querySelector(".number").textContent = number;
+    document.querySelector(".pyro>.before").style.display = "block";
+    document.querySelector(".pyro>.after").style.display = "block";
+    document.querySelector(".message").style.border =
+      "10px solid rgba(255,0,0,.5)";
     if (score > highscore) {
       highscore = score;
       document.querySelector(".highscore").textContent = highscore;
@@ -29,8 +32,10 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".score").textContent = score;
       document.querySelector(".heart").textContent = heart;
     } else {
-      displayMessage("You lost the game! Please click aganin!");
+      displayMessage("You lost the game! Please click Aganin!");
       document.querySelector(".score").textContent = 0;
+    document.querySelector(".number").textContent = number;
+    document.querySelector(".heart").textContent = 0;
     }
   }
 });
@@ -45,4 +50,8 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".guess").value = "";
   document.querySelector("body").style.backgroundColor = "#222";
   document.querySelector("body").style.width = "#15rem";
+  document.querySelector(".pyro>.before").style.display = "none";
+  document.querySelector(".pyro>.after").style.display = "none";
+  document.querySelector(".message").style.border =
+      "4px solid #ffd154";
 });

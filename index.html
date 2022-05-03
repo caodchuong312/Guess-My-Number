@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman&family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -34,6 +33,20 @@
         </p>
       </section>
     </main>
+    <footer>
+      <h2 class="label-tutorial">Hướng dẫn chơi:</h2>
+      <p class="tutorial">
+        Máy sẽ tự random 1 con số từ 1->20 và nhiệm vụ của bạn là tìm ra nó.
+        Bạn nhập số dự đoán vào và bấm vào Check. Nếu số của bạn lớn hơn máy sẽ hiện thị "too hight" ngược lại nếu số bạn chọn bé hơn thì máy sẽ hiện thị "too low".
+        Và tiếp tục như vậy để bạn "mò" ra số cần tìm.
+        Bạn có 5 lần check và có 20 điểm, sau mỗi lần check chưa đúng thì bạn bị trừ 1 điểm, hết 5 lần mà vẫn chưa tìm ra thì bạn sẽ thua !
+        Khi đó bạn có thể bấm vào Again để bắt đầu chơi lại
+      </p>
+    </footer>
+    <div class="pyro">
+      <div class="before"></div>
+      <div class="after"></div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
