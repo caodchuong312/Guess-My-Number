@@ -20,6 +20,8 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".pyro>.after").style.display = "block";
     document.querySelector(".message").style.border =
       "10px solid rgba(255,0,0,.5)";
+      document.querySelector(".message").style.color = "yellow";
+
     if (score > highscore) {
       highscore = score;
       document.querySelector(".highscore").textContent = highscore;
@@ -34,8 +36,9 @@ document.querySelector(".check").addEventListener("click", function () {
     } else {
       displayMessage("You lost the game! Please click Aganin!");
       document.querySelector(".score").textContent = 0;
-    document.querySelector(".number").textContent = number;
-    document.querySelector(".heart").textContent = 0;
+      document.querySelector(".number").textContent = number;
+      document.querySelector(".heart").textContent = 0;
+      document.querySelector(".message").style.color = "red";
     }
   }
 });
@@ -52,6 +55,7 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector("body").style.width = "#15rem";
   document.querySelector(".pyro>.before").style.display = "none";
   document.querySelector(".pyro>.after").style.display = "none";
-  document.querySelector(".message").style.border =
-      "4px solid #ffd154";
+  document.querySelector(".message").style.border = "4px solid #ffd154";
+  document.querySelector(".message").style.color = "#fff";
+
 });
