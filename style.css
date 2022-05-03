@@ -453,7 +453,7 @@ footer {
         font-size: 1.6rem;
         text-align: center;
         width: 100%;
-        margin-bottom: -12rem;
+        /* margin-bottom: -12rem; */
     }
 
     .left {
