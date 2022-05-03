@@ -124,29 +124,34 @@ h1 {
 
 }
 
-@media only screen and (min-width: 600px) {
-
-   
-}
+@media only screen and (min-width: 600px) {}
 
 @media only screen and (max-width: 599px) {
-    html{
+    html {
         font-size: 45%;
     }
-    .right{
+
+    .between {
+        top: 4rem;
+    }
+
+    .right {
         font-size: 1.4rem;
         text-align: center;
         width: 100%;
-        margin-bottom: -16rem;
+        margin-bottom: -12rem;
     }
-    .left{
+
+    .left {
         width: 100%;
     }
-    main{
+
+    main {
         flex-direction: column-reverse;
     }
-    .message{
-        margin: 4rem 0 ;
+
+    .message {
+        margin: 4rem 0;
     }
 
 }
