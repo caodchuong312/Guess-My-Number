@@ -135,7 +135,18 @@ h1 {
     }
     .right{
         font-size: 1.4rem;
+        text-align: center;
+        width: 100%;
+        margin-bottom: -16rem;
     }
-    
+    .left{
+        width: 100%;
+    }
+    main{
+        flex-direction: column-reverse;
+    }
+    .message{
+        margin: 4rem 0 ;
+    }
 
 }

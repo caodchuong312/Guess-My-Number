@@ -12,7 +12,7 @@ document.querySelector(".check").addEventListener("click", function () {
   if (!guess) {
     displayMessage("No Number");
   } else if (guess === number) {
-    displayMessage("Correct");
+    displayMessage("Correct ! You win !");
     document.querySelector("body").style.backgroundColor = "#60b347";
     document.querySelector("body").style.width = "#30rem";
 
